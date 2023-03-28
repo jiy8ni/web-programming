@@ -1,0 +1,28 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .cell.clicked {
+    background-color: #ccc;
+  }
+  
+  .cell.mine {
+    background-color: #f00;
+  }
+  
+  .cell.flagged {
+    background-color: #00f;
+  }
+  
